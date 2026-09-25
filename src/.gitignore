@@ -1,0 +1,22 @@
+# 1. Create .gitignore (skip if you already made one in the editor)
+echo "venv/
+__pycache__/
+*.pyc
+data/raw_secom.csv
+outputs/*.csv" > .gitignore
+
+# 2. Initialize git
+git init
+
+# 3. Set your identity (only needed once, ever)
+git config --global user.name "Sreerama Hosahalli Venkatesh"
+git config --global user.email "sreeramahosahallivenkatesh@gmail.com"
+
+# 4. Stage and commit
+git add .
+git commit -m "Initial commit: manufacturing quality dashboard"
+
+# 5. Connect to GitHub (create the empty repo on github.com first, then copy your actual URL here)
+git branch -M main
+git remote add origin https://github.com/sriramvadhul/quality-dashboard.git
+git push -u origin main
